@@ -1,7 +1,9 @@
+# config/routes.rb
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
-  verb "url", to: "controller#action"
+  # Generic syntax:
+  # verb "path", to: "controller#action"
+  root                   to: "questions#home"
+  get "about",           to: "questions#about",      as: :about
+  get "contact",         to: "questions#contact",    as: :contact
+  get "answer",          to: "questions#answer",     as: :answer
 end

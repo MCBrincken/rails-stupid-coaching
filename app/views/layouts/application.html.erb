@@ -11,6 +11,11 @@
   </head>
 
   <body>
+    <%# <a href="./">home</a> <a href="about">about</a><a href="contact">contact</a> %>
+    <%= link_to "Home", root_path %>
+    <%= link_to "Know more about us", about_path %>
+    <%= link_to "Contact", contact_path %>
+    <%= link_to "Coach", answer_path %>
     <%= yield %>
   </body>
 </html>
